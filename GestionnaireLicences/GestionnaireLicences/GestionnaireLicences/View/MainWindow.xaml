@@ -1,0 +1,36 @@
+﻿<Window x:Class="GestionnaireLicences.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionnaireLicences.View"
+        Title="Gestion des Licences" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Button Content="Ajouter" Command="{Binding AjouterCommand}" Width="100" Margin="0,0,10,0"/>
+            <Button Content="Modifier" Command="{Binding ModifierCommand}" Width="100" Margin="0,0,10,0"/>
+            <Button Content="Supprimer" Command="{Binding SupprimerCommand}" Width="100"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Licences}" 
+                  SelectedItem="{Binding LicenceSelectionnee}" 
+                  AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom du Logiciel" Binding="{Binding NomLogiciel}"/>
+                <DataGridTextColumn Header="Type de Licence" Binding="{Binding TypeLicence}"/>
+                <DataGridTextColumn Header="Date d'Expiration" Binding="{Binding DateExpiration, StringFormat=d}"/>
+                <DataGridTextColumn Header="Nombre d'Utilisateurs" Binding="{Binding NombreUtilisateurs}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StatusBar Grid.Row="2">
+            <StatusBarItem Content="{Binding StatusMessage}"/>
+        </StatusBar>
+    </Grid>
+</Window>
