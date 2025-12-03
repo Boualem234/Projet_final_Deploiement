@@ -30,7 +30,7 @@ app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     try {
-        const response = await axios.post('http://localhost:5000/auth', { 
+        const response = await axios.post('http://host.docker.internal:5000/auth', { 
             username,
             password
         });
