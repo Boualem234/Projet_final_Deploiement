@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const axios = require('axios');
+const path = require('path');
 
 const app = express();
 const PORT = 3000;
@@ -29,10 +30,11 @@ app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     try {
-        const response = await axios.post('http://auth:5000/auth', { 
+        const response = await axios.post('http://localhost:5000/auth', { 
             username,
             password
         });
+
 
         if (response.data.authenticated) {
             req.session.user = username; // Store user in session
@@ -49,10 +51,10 @@ app.post('/login', async (req, res) => {
 // Route pour le téléchargement du fichier setup.exe
 app.get('/download', (req, res) => {
     if (!req.session.user) {
-        return res.redirect('/'); // Redirect to home if not logged in
+        return res.redirect('/');
     }
-    const filePath = path.join('Path', 'setup.exe'); // Chemin vers votre fichier setup.exe
-    res.download(filePath, 'setup.exe', (err) => {
+    const filePath = path.join(__dirname, 'files', 'mysetup-boualem-final.exe');
+    res.download(filePath, 'mysetup-boualem-final.exe', (err) => {
         if (err) {
             console.error("Erreur lors du téléchargement :", err);
             res.status(500).send("Erreur lors du téléchargement du fichier.");
