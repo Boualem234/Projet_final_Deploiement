@@ -1,15 +1,17 @@
-CREATE DATABASE `nom_de_votre_bd` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE gestion_licences /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-CREATE TABLE licences (
+USE gestion_licences;
+
+CREATE TABLE Licences (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nom_logiciel VARCHAR(100) NOT NULL,
     type_licence VARCHAR(50) NOT NULL,
     date_expiration DATE,
     nombre_utilisateurs INT
-)
+);
 
 
-INSERT INTO licences (nom_logiciel, type_licence, date_expiration, nombre_utilisateurs) VALUES
+INSERT INTO Licences (nom_logiciel, type_licence, date_expiration, nombre_utilisateurs) VALUES
 ('Microsoft Office', 'Abonnement', '2025-12-31', 100),
 ('Adobe Creative Cloud', 'Abonnement', '2025-06-30', 50),
 ('AutoCAD', 'Perpétuelle', NULL, 25),

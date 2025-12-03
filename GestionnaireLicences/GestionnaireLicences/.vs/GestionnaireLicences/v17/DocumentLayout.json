@@ -3,6 +3,33 @@
   "WorkspaceRootPath": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\models\\base\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\models\\base\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\models\\licence\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\models\\licence\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\sql\\apirestconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\sql\\apirestconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\viewmodel\\vm_ajoutlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\viewmodel\\vm_ajoutlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\view\\ajouterlicencewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\view\\ajouterlicencewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\gestionnairelicences.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -11,24 +38,8 @@
       "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\dataaccesslayer\\factories\\licencefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\models\\licence\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\models\\licence\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\models\\base\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\models\\base\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\sql\\apirestconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\sql\\apirestconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\dataaccesslayer\\factories\\base\\factorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\dataaccesslayer\\factories\\base\\factorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +48,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\dataaccesslayer\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\dataaccesslayer\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\viewmodel\\vm_ajoutlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\viewmodel\\vm_ajoutlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\viewmodel\\vm_modifierlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +68,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\view\\ajouterlicencewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|solutionrelative:gestionnairelicences\\view\\ajouterlicencewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E787EF98-B6CC-4D59-8A49-A205A0A8C9CB}|GestionnaireLicences\\GestionnaireLicences.csproj|c:\\bureau\\projet_final_deploiement\\gestionnairelicences\\gestionnairelicences\\gestionnairelicences\\view\\ajouterlicencewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -121,6 +124,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAH8BAAAAAAAAAIAwwJABAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T22:59:30.606Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GestionnaireLicences.csproj",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences.csproj",
               "RelativeDocumentMoniker": "GestionnaireLicences\\GestionnaireLicences.csproj",
@@ -128,24 +144,11 @@
               "RelativeToolTip": "GestionnaireLicences\\GestionnaireLicences.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-02T21:54:34.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T21:54:34.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LicenceFactory.cs",
-              "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
-              "RelativeDocumentMoniker": "GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
-              "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
-              "RelativeToolTip": "GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAIAwwCsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:36:34.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ModelBase.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\Models\\Base\\ModelBase.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\Models\\Base\\ModelBase.cs",
@@ -153,11 +156,12 @@
               "RelativeToolTip": "GestionnaireLicences\\Models\\Base\\ModelBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:50:13.039Z"
+              "WhenOpened": "2024-11-27T14:50:13.039Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Licence.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\Models\\Licence\\Licence.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\Models\\Licence\\Licence.cs",
@@ -175,13 +179,13 @@
               "RelativeDocumentMoniker": "GestionnaireLicences\\SQL\\APIRestConfig.cs",
               "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\SQL\\APIRestConfig.cs",
               "RelativeToolTip": "GestionnaireLicences\\SQL\\APIRestConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T14:38:21.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "VM_AjoutLicence.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\ViewModel\\VM_AjoutLicence.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\ViewModel\\VM_AjoutLicence.cs",
@@ -193,31 +197,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "AjouterLicenceWindow.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\AjouterLicenceWindow.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\AjouterLicenceWindow.cs",
               "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\AjouterLicenceWindow.cs",
               "RelativeToolTip": "GestionnaireLicences\\View\\AjouterLicenceWindow.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAowCQAAAAAAAAA",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T16:44:39.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\appsettings.json",
               "RelativeDocumentMoniker": "GestionnaireLicences\\appsettings.json",
               "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\appsettings.json",
               "RelativeToolTip": "GestionnaireLicences\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-27T15:20:15.621Z"
+              "WhenOpened": "2024-11-27T15:20:15.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "LicenceFactory.cs",
+              "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
+              "RelativeDocumentMoniker": "GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
+              "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
+              "RelativeToolTip": "GestionnaireLicences\\DataAccessLayer\\Factories\\LicenceFactory.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIAwwCsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:36:34.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FactoryBase.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\Factories\\Base\\FactoryBase.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\DataAccessLayer\\Factories\\Base\\FactoryBase.cs",
@@ -229,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\AssemblyInfo.cs",
@@ -241,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\DataAccessLayer\\DAL.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\DataAccessLayer\\DAL.cs",
@@ -253,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "VM_ModifierLicence.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\ViewModel\\VM_ModifierLicence.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\ViewModel\\VM_ModifierLicence.cs",
@@ -265,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\MainWindow.xaml.cs",
@@ -277,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "VM_MainWindow.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\ViewModel\\VM_MainWindow.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\ViewModel\\VM_MainWindow.cs",
@@ -289,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ModifierLicenceWindow.xaml",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\ModifierLicenceWindow.xaml",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\ModifierLicenceWindow.xaml",
@@ -300,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ModifierLicenceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\ModifierLicenceWindow.xaml.cs",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\ModifierLicenceWindow.xaml.cs",
@@ -312,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AjouterLicenceWindow.xaml",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\AjouterLicenceWindow.xaml",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\AjouterLicenceWindow.xaml",
@@ -323,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\App.xaml",
               "RelativeDocumentMoniker": "GestionnaireLicences\\App.xaml",
@@ -334,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GestionnaireLicences\\View\\MainWindow.xaml",
@@ -345,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ResourcePart.cs [Lecture seule]",
               "DocumentMoniker": "C:\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\d498bf5cbf016a5efdb400a121800957635e0d0b034e73e35cb6157ee74399c0\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\d498bf5cbf016a5efdb400a121800957635e0d0b034e73e35cb6157ee74399c0\\ResourcePart.cs",
@@ -358,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\appsettings.Development.json",
               "RelativeDocumentMoniker": "GestionnaireLicences\\appsettings.Development.json",
@@ -370,13 +387,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "XamlReader.cs [Lecture seule]",
               "DocumentMoniker": "C:\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\289960d74eab1ad4756d0052f9fc3c03d1d06f75ea0a80eea44b8ac83ec7238d\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\289960d74eab1ad4756d0052f9fc3c03d1d06f75ea0a80eea44b8ac83ec7238d\\XamlReader.cs",
               "ToolTip": "C:\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\289960d74eab1ad4756d0052f9fc3c03d1d06f75ea0a80eea44b8ac83ec7238d\\XamlReader.cs [Lecture seule]",
               "RelativeToolTip": "..\\..\\..\\..\\Users\\steven.duquette\\AppData\\Local\\Temp\\.vsdbgsrc\\289960d74eab1ad4756d0052f9fc3c03d1d06f75ea0a80eea44b8ac83ec7238d\\XamlReader.cs [Lecture seule]",
-              "ViewState": "AQIAAM0BAAAAAAAAAADwv9kBAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T15:27:44.049Z",
               "EditorCaption": " [Lecture seule]"
