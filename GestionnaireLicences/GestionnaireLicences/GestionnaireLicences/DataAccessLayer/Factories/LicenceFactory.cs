@@ -4,289 +4,134 @@ using System.Linq;
 using System.Threading.Tasks;
 using GestionnaireLicences.Models.Licence;
 using GestionnaireLicences.DataAccessLayer.Factories.Base;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient; // Changé de MySql.Data.MySqlClient
 
 namespace GestionnaireLicences.DataAccessLayer.Factories
 {
     public class LicenceFactory : FactoryBase
     {
-        private Licence CreateFromReader(MySqlDataReader mySqlDataReader)
+        private Licence CreateFromReader(SqlDataReader sqlDataReader) // Changé de MySqlDataReader
         {
-            int id = (int)mySqlDataReader["Id"];
-            string nomLogiciel = mySqlDataReader["nom_logiciel"].ToString();
-            string typeLicence = mySqlDataReader["type_licence"].ToString();
-            int? nombreUtilisateur = mySqlDataReader["nombre_utilisateurs"] != DBNull.Value ? (int?)mySqlDataReader["nombre_utilisateurs"] : null;
-            DateTime? dateExpiration = mySqlDataReader["date_expiration"] != DBNull.Value ? (DateTime?)mySqlDataReader["date_expiration"] : null;
-            //DateTime dateExpiration = new DateTime();
+            int id = (int)sqlDataReader["Id"];
+            string nomLogiciel = sqlDataReader["nom_logiciel"].ToString();
+            string typeLicence = sqlDataReader["type_licence"].ToString();
+            int? nombreUtilisateur = sqlDataReader["nombre_utilisateurs"] != DBNull.Value ? (int?)sqlDataReader["nombre_utilisateurs"] : null;
+            DateTime? dateExpiration = sqlDataReader["date_expiration"] != DBNull.Value ? (DateTime?)sqlDataReader["date_expiration"] : null;
             return new Licence(id, nomLogiciel, typeLicence, dateExpiration, nombreUtilisateur);
         }
-        /*
-        public Licence CreateEmpty()
-        {
-            return new Licence(0, string.Empty, string.Empty, 0);
-        }*/
 
         public List<Licence> GetAll()
         {
             List<Licence> licences = new List<Licence>();
 
-            MySqlConnection mySqlCnn = null;
+            SqlConnection sqlCnn = null; // Changé de MySqlConnection
 
             try
             {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
+                sqlCnn = new SqlConnection(CnnStr);
+                sqlCnn.Open();
 
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
+                using (SqlCommand sqlCmd = sqlCnn.CreateCommand()) // Changé de MySqlCommand
                 {
-                    mySqlCmd.CommandText = "SELECT * FROM Licences";
+                    sqlCmd.CommandText = "SELECT * FROM Licences";
 
-                    using (MySqlDataReader mySqlDataReader = mySqlCmd.ExecuteReader())
+                    using (SqlDataReader sqlDataReader = sqlCmd.ExecuteReader()) // Changé de MySqlDataReader
                     {
-                        while (mySqlDataReader.Read())
+                        while (sqlDataReader.Read())
                         {
-                            licences.Add(CreateFromReader(mySqlDataReader));
+                            licences.Add(CreateFromReader(sqlDataReader));
                         }
 
-                        mySqlDataReader.Close();
+                        sqlDataReader.Close();
                     }
                 }
             }
             finally
             {
-                if (mySqlCnn != null)
+                if (sqlCnn != null)
                 {
-                    mySqlCnn.Close();
+                    sqlCnn.Close();
                 }
             }
 
             return licences;
         }
+
         public void Delete(int id)
         {
-            MySqlConnection mySqlCnn = null;
+            SqlConnection sqlCnn = null; // Changé de MySqlConnection
 
             try
             {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
+                sqlCnn = new SqlConnection(CnnStr);
+                sqlCnn.Open();
 
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
+                using (SqlCommand sqlCmd = sqlCnn.CreateCommand()) // Changé de MySqlCommand
                 {
-                    mySqlCmd.CommandText = "DELETE FROM licences WHERE Id=@Id";
-                    mySqlCmd.Parameters.AddWithValue("@Id", id);
-                    mySqlCmd.ExecuteNonQuery();
+                    sqlCmd.CommandText = "DELETE FROM licences WHERE Id=@Id";
+                    sqlCmd.Parameters.AddWithValue("@Id", id);
+                    sqlCmd.ExecuteNonQuery();
                 }
             }
             finally
             {
-                if (mySqlCnn != null)
+                if (sqlCnn != null)
                 {
-                    mySqlCnn.Close();
+                    sqlCnn.Close();
                 }
             }
-
-        }
-        public void Save(Licence licence)
-        {
-            MySqlConnection mySqlCnn = null;
-
-            try
-            {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
-
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
-                {
-                    if (licence.Id == 0)
-                    {
-                        // On sait que c'est un nouveau produit avec Id == 0,
-                        // car c'est ce que nous avons affecter dans la fonction CreateEmpty().
-                        mySqlCmd.CommandText = "INSERT INTO licences (nom_logiciel, type_licence, date_expiration, nombre_utilisateurs)" +
-                                               "VALUES (@nom_logiciel, @type_licence, @date_expiration, @nombre_utilisateurs)";
-                    }
-                    else
-                    {
-                        mySqlCmd.CommandText = "UPDATE licences " +
-                                               "SET nom_logiciel=@nom_logiciel, type_licence=@type_licence, date_expiration=@date_expiration, nombre_utilisateurs=@nombre_utilisateurs " +
-                                               "WHERE Id=@Id";
-
-                        mySqlCmd.Parameters.AddWithValue("@Id", licence.Id);
-                    }
-
-                    mySqlCmd.Parameters.AddWithValue("@nom_logiciel", licence.NomLogiciel.Trim());
-                    mySqlCmd.Parameters.AddWithValue("@type_licence", licence.TypeLicence.Trim());
-                    mySqlCmd.Parameters.AddWithValue("@date_expiration", licence.DateExpiration);
-                    mySqlCmd.Parameters.AddWithValue("@nombre_utilisateurs", licence.NombreUtilisateurs);
-
-                    mySqlCmd.ExecuteNonQuery();
-
-                    if (licence.Id == 0)
-                    {
-                        // Si c'était un nouveau produit (requête INSERT),
-                        // nous affectons le nouvel Id de l'instance au cas où il serait utilisé dans le code appelant.
-                        licence.Id = (int)mySqlCmd.LastInsertedId;
-                    }
-                }
-            }
-            finally
-            {
-                if (mySqlCnn != null)
-                {
-                    mySqlCnn.Close();
-                }
-            }
-        }
-        /*
-        public Licence GetFirst()
-        {
-            Licence licence = null;
-
-            MySqlConnection mySqlCnn = null;
-
-            try
-            {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
-
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
-                {
-                    mySqlCmd.CommandText = "SELECT * FROM tp3_licences LIMIT 1";
-
-                    using (MySqlDataReader mySqlDataReader = mySqlCmd.ExecuteReader())
-                    {
-                        if (mySqlDataReader.Read())
-                        {
-                            licence = CreateFromReader(mySqlDataReader);
-                        }
-
-                        mySqlDataReader.Close();
-                    }
-                }
-            }
-            finally
-            {
-                if (mySqlCnn != null)
-                {
-                    mySqlCnn.Close();
-                }
-            }
-
-            return licence;
-        }
-
-        public Licence Get(int id)
-        {
-            Licence licence = null;
-
-            MySqlConnection mySqlCnn = null;
-
-            try
-            {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
-
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
-                {
-                    mySqlCmd.CommandText = "SELECT * FROM tp3_licences WHERE Id = @Id";
-                    mySqlCmd.Parameters.AddWithValue("@Id", id);
-
-                    using (MySqlDataReader mySqlDataReader = mySqlCmd.ExecuteReader())
-                    {
-                        if (mySqlDataReader.Read())
-                        {
-                            licence = CreateFromReader(mySqlDataReader);
-                        }
-
-                        mySqlDataReader.Close();
-                    }
-                }
-            }
-            finally
-            {
-                if (mySqlCnn != null)
-                {
-                    mySqlCnn.Close();
-                }
-            }
-
-            return licence;
         }
 
         public void Save(Licence licence)
         {
-            MySqlConnection mySqlCnn = null;
-
-            try
+            using (SqlConnection sqlCnn = new SqlConnection(CnnStr))
             {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
+                sqlCnn.Open();
 
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
+                using (SqlCommand sqlCmd = sqlCnn.CreateCommand())
                 {
                     if (licence.Id == 0)
                     {
-                        // On sait que c'est un nouveau produit avec Id == 0,
-                        // car c'est ce que nous avons affecter dans la fonction CreateEmpty().
-                        mySqlCmd.CommandText = "INSERT INTO tp3_licences(Code, Name, CategoryId, Scale, Vendor, Description, QuantityInStock, BuyPrice, MSRP) " +
-                                               "VALUES (@Code, @Name, 1, 1, '', '', @QuantityInStock, 0, 0)";
+                        sqlCmd.CommandText =
+                            "INSERT INTO licences (nom_logiciel, type_licence, date_expiration, nombre_utilisateurs) " +
+                            "VALUES (@nom_logiciel, @type_licence, @date_expiration, @nombre_utilisateurs); " +
+                            "SELECT CAST(SCOPE_IDENTITY() AS int);";
                     }
                     else
                     {
-                        mySqlCmd.CommandText = "UPDATE tp3_licences " +
-                                               "SET Code=@Code, Name=@Name, QuantityInStock=@QuantityInStock " +
-                                               "WHERE Id=@Id";
+                        sqlCmd.CommandText =
+                            "UPDATE licences " +
+                            "SET nom_logiciel=@nom_logiciel, type_licence=@type_licence, date_expiration=@date_expiration, nombre_utilisateurs=@nombre_utilisateurs " +
+                            "WHERE Id=@Id";
 
-                        mySqlCmd.Parameters.AddWithValue("@Id", licence.Id);
+                        sqlCmd.Parameters.AddWithValue("@Id", licence.Id);
                     }
 
-                    mySqlCmd.Parameters.AddWithValue("@Code", licence.Code.Trim());
-                    mySqlCmd.Parameters.AddWithValue("@Name", licence.Name.Trim());
-                    mySqlCmd.Parameters.AddWithValue("@QuantityInStock", licence.QuantityInStock);
+                    sqlCmd.Parameters.AddWithValue("@nom_logiciel", licence.NomLogiciel.Trim());
+                    sqlCmd.Parameters.AddWithValue("@type_licence", licence.TypeLicence.Trim());
 
-                    mySqlCmd.ExecuteNonQuery();
+                    if (licence.DateExpiration.HasValue)
+                        sqlCmd.Parameters.AddWithValue("@date_expiration", licence.DateExpiration.Value);
+                    else
+                        sqlCmd.Parameters.Add(new SqlParameter("@date_expiration", System.Data.SqlDbType.DateTime) { Value = DBNull.Value });
+
+                    if (licence.NombreUtilisateurs.HasValue)
+                        sqlCmd.Parameters.AddWithValue("@nombre_utilisateurs", licence.NombreUtilisateurs.Value);
+                    else
+                        sqlCmd.Parameters.Add(new SqlParameter("@nombre_utilisateurs", System.Data.SqlDbType.Int) { Value = DBNull.Value });
 
                     if (licence.Id == 0)
                     {
-                        // Si c'était un nouveau produit (requête INSERT),
-                        // nous affectons le nouvel Id de l'instance au cas où il serait utilisé dans le code appelant.
-                        licence.Id = (int)mySqlCmd.LastInsertedId;
+                        // INSERT + récupération de l'ID
+                        licence.Id = (int)sqlCmd.ExecuteScalar();
+                    }
+                    else
+                    {
+                        // UPDATE
+                        sqlCmd.ExecuteNonQuery();
                     }
                 }
             }
-            finally
-            {
-                if (mySqlCnn != null)
-                {
-                    mySqlCnn.Close();
-                }
-            }
         }
-
-        public void Delete(int id)
-        {
-            MySqlConnection mySqlCnn = null;
-
-            try
-            {
-                mySqlCnn = new MySqlConnection(CnnStr);
-                mySqlCnn.Open();
-
-                using (MySqlCommand mySqlCmd = mySqlCnn.CreateCommand())
-                {
-                    mySqlCmd.CommandText = "DELETE FROM tp3_licences WHERE Id=@Id";
-                    mySqlCmd.Parameters.AddWithValue("@Id", id);
-                    mySqlCmd.ExecuteNonQuery();
-                }
-            }
-            finally
-            {
-                if (mySqlCnn != null)
-                {
-                    mySqlCnn.Close();
-                }
-            }
-        
-        }*/
     }
 }

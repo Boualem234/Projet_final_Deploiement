@@ -17,22 +17,11 @@ namespace GestionnaireLicences.DataAccessLayer.Factories.Base
             {
                 if (_cnnStr == string.Empty)
                 {
-                    try
-                    {
-                        var basePath = AppDomain.CurrentDomain.BaseDirectory;
-                        var config = new ConfigurationBuilder()
-                            .SetBasePath(basePath)
-                            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                            .Build();
-                        
-                        var sectionConnectionString = config.GetSection("ConnectionString");
-                        ApiRestConnectionString connectionString = sectionConnectionString.Get<ApiRestConnectionString>();
-                        _cnnStr = connectionString.BuildConnectionString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception($"Erreur lors de la lecture de appsettings.json : {ex.Message}", ex);
-                    }
+                    var test = AppDomain.CurrentDomain;
+                    var config = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json").Build();
+                    var sectionConnectionString = config.GetSection("ConnectionString");
+                    ApiRestConnectionString connectionString = sectionConnectionString.Get<ApiRestConnectionString>();
+                    _cnnStr = connectionString.BuildConnectionString();
                 }
 
                 return _cnnStr;
