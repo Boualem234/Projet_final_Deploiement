@@ -30,11 +30,10 @@ app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     try {
-        const response = await axios.post('http://host.docker.internal:5000/auth', { 
-            username,
-            password
+        const response = await axios.post('http://auth-service:5000/auth', {
+        username,
+        password
         });
-
 
         if (response.data.authenticated) {
             req.session.user = username; // Store user in session
@@ -53,8 +52,8 @@ app.get('/download', (req, res) => {
     if (!req.session.user) {
         return res.redirect('/');
     }
-    const filePath = path.join(__dirname, 'files', 'mysetup-boualem-final.exe');
-    res.download(filePath, 'mysetup-boualem-final.exe', (err) => {
+    const filePath = path.join(__dirname, 'files', 'setupLicencesBoualem.exe');
+    res.download(filePath, 'setupLicencesBoualem.exe', (err) => {
         if (err) {
             console.error("Erreur lors du téléchargement :", err);
             res.status(500).send("Erreur lors du téléchargement du fichier.");

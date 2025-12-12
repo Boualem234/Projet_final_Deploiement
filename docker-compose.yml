@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  postgres-db:
+    image: postgres:15
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: authdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./auth/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-net
+
+  auth-service:
+    build: ./auth
+    container_name: auth-service
+    depends_on:
+      - postgres-db
+    environment:
+      # URI PostgreSQL interne (même réseau Docker)
+      DATABASE_URL: postgresql://postgres:postgres@postgres-db:5432/authdb
+    ports:
+      - "5000:5000"
+    networks:
+      - app-net
+
+  web-app:
+    build: ./web
+    container_name: web-app
+    depends_on:
+      - auth-service
+    ports:
+      - "3000:3000"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

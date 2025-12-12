@@ -127,24 +127,12 @@
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs [Read Only]",
-              "ViewState": "AgIAAH8BAAAAAAAAAIAwwJABAAACAAAAAQAAAA==",
+              "ToolTip": "C:\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\boual\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAUwJABAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T22:59:30.606Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GestionnaireLicences.csproj",
-              "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences.csproj",
-              "RelativeDocumentMoniker": "GestionnaireLicences\\GestionnaireLicences.csproj",
-              "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences.csproj",
-              "RelativeToolTip": "GestionnaireLicences\\GestionnaireLicences.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-02T21:54:34.185Z"
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -156,8 +144,7 @@
               "RelativeToolTip": "GestionnaireLicences\\Models\\Base\\ModelBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:50:13.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:50:13.039Z"
             },
             {
               "$type": "Document",
@@ -219,6 +206,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-27T15:20:15.621Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestionnaireLicences.csproj",
+              "DocumentMoniker": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences.csproj",
+              "RelativeDocumentMoniker": "GestionnaireLicences\\GestionnaireLicences.csproj",
+              "ToolTip": "C:\\Bureau\\Projet_final_Deploiement\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences\\GestionnaireLicences.csproj",
+              "RelativeToolTip": "GestionnaireLicences\\GestionnaireLicences.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T21:54:34.185Z"
             },
             {
               "$type": "Document",
